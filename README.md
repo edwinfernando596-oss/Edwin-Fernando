@@ -1,2 +1,0 @@
-# Edwin-Fernando
-Diriku pemberani 
