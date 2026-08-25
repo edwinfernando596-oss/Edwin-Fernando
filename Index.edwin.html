@@ -3,86 +3,580 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Perkenalan Kolaborasi Ali Dex x Edwin Fernando">
-    <title>Ali Dex x Edwin Fernando</title>
+    <meta name="description" content="Perkenalan Kolaborasi Ali Dex x Edwin Fernando - Portfolio dan Layanan Desain & Teknologi">
+    <meta name="keywords" content="desain, teknologi, portfolio, kolaborasi, Ali Dex, Edwin Fernando">
+    <title>Ali Dex x Edwin Fernando | Kolaborasi Desain & Teknologi</title>
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navigation Header -->
     <header class="site-header">
-        <a href="#" class="brand" href="#beranda" aria-label="Halaman utama Ali Dex dan Edwin Fernando">
-            <span class="brand-text">Ali Dex x Edwin Fernando</span>
-        </a>
-        <nav class="nav">
-            <a class="header-link" href="#tentang" kendall kami edgar aria-label="Tentang kami">
-                about
+        <div class="header-container">
+            <a href="#" class="brand" aria-label="Halaman utama Ali Dex dan Edwin Fernando">
+                <span class="brand-icon">A<span class="brand-amp">&</span>E</span>
+                <span class="brand-text">Ali Dex × Edwin Fernando</span>
             </a>
-        </nav>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav class="nav" id="mainNav">
+                <a class="nav-link" href="#beranda">Beranda</a>
+                <a class="nav-link" href="#tentang">Tentang</a>
+                <a class="nav-link" href="#profil">Profil</a>
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+                <a class="nav-link" href="#layanan">Layanan</a>
+                <a class="nav-link" href="#kontak">Kontak</a>
+            </nav>
+        </div>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="hero" id="beranda">
-            <div class="hero-copy-reveal">
-                <h1 class="hero-title">
-                    <span class="hero-visual reveal reveal-delay">
-                        <span class="sun-shape"></span>
-                    </span>
-                    <span class="hero-title-text">Menali Dengan Ali Dex dan Edwin Fernando</span>
-                </h1>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-copy-reveal">
+                        <h1 class="hero-title">
+                            <span class="hero-visual reveal">
+                                <span class="sun-shape"></span>
+                            </span>
+                            <span class="hero-title-text">Menciptakan Magis Dengan Ali Dex dan Edwin Fernando</span>
+                        </h1>
+                    </div>
+                    <p class="hero-subtitle">Menggabungkan kreativitas desain dengan inovasi teknologi untuk menciptakan pengalaman digital yang luar biasa</p>
+                    <div class="hero-cta">
+                        <a href="#kontak" class="btn btn-primary">Mulai Kolaborasi</a>
+                        <a href="#portfolio" class="btn btn-secondary">Lihat Karya Kami</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-grid">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=600" alt="Tim kolaborasi kreatif" class="hero-photo main-photo" loading="lazy">
+                    </div>
+                    <div class="floating-badge">
+                        <span class="badge-icon">⚡</span>
+                        <span>Kreatif & Inovatif</span>
+                    </div>
+                </div>
             </div>
-            <div class="hero-image-grid">
-                <img src="https://images.unsplash.com/photo-1520769945061-0a448c463865?q=80&w=600" alt="Foto hero" class="hero-photo main-photo">
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <span>Scroll untuk lanjut</span>
+                <div class="scroll-dots">
+                    <span></span>
+                </div>
             </div>
         </section>
 
+        <!-- Tentang Kami Section -->
         <section class="intro-band" id="tentang">
-            <p class="section-number">01 // tentang kami</p>
-            <p class="band-copy">kami percaya setiap orang membawa warna yang berbeda</p>
+            <div class="intro-container">
+                <p class="section-number">01 // tentang kami</p>
+                <p class="band-copy">Kami percaya setiap orang membawa warna yang berbeda ke dunia digital</p>
+                <p class="band-description">Kombinasi unik antara visi visual dan keahlian teknis menciptakan solusi yang tidak hanya indah secara estetika, tetapi juga powerful dalam eksekusi. Kami berdedikasi untuk menghadirkan karya yang bermakna dan berdampak.</p>
+            </div>
         </section>
 
-        <section class="profiles" id="profil">
-            <div class="section-heading">
-                <p class="section-number">02 // profil</p>
-                <h2 class="section-title">Dua Kepala, Satu Karya</h2>
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Proyek Selesai</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">30+</div>
+                    <div class="stat-label">Klien Puas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Tahun Pengalaman</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Komitmen Kualitas</div>
+                </div>
             </div>
+        </section>
 
-            <div class="profile-grid">
-                <article class="profile-card ali-card">
-                    <div class="profile-photo">
-                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400" alt="Foto profil Ali Dex">
-                    </div>
-                    <div class="profile-info">
-                        <p class="card-name">Ali Dex</p>
-                        <dl class="profile-details">
-                            <div class="detail-item"><dt>Peran</dt><dd>Visual Thinker</dd></div>
-                            <div class="detail-item"><dt>Gaya</dt><dd>Desainer Kreatif</dd></div>
-                        </dl>
-                    </div>
-                </article>
+        <!-- Profile Section -->
+        <section class="profiles" id="profil">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-number">02 // profil kami</p>
+                    <h2 class="section-title">Dua Kepala, Satu Visi Kreatif</h2>
+                </div>
 
-                <article class="profile-card edwin-card">
-                    <div class="profile-photo">
-                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400" alt="Foto profil Edwin Fernando">
+                <div class="profile-grid">
+                    <article class="profile-card ali-card">
+                        <div class="profile-header">
+                            <div class="profile-photo">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400" alt="Foto profil Ali Dex" loading="lazy">
+                                <div class="profile-overlay">
+                                    <div class="social-links">
+                                        <a href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                        <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#" aria-label="Twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h3 class="card-name">Ali Dex</h3>
+                            <p class="card-role">Visual Thinker & Creative Designer</p>
+                            <p class="card-bio">Seorang desainer dengan passion mendalam dalam menciptakan visual yang memukau dan user interface yang intuitif.</p>
+                            <dl class="profile-details">
+                                <div class="detail-item">
+                                    <dt>Spesialisasi</dt>
+                                    <dd>UI/UX Design</dd>
+                                </div>
+                                <div class="detail-item">
+                                    <dt>Tools</dt>
+                                    <dd>Figma, Adobe XD, Photoshop</dd>
+                                </div>
+                                <div class="detail-item">
+                                    <dt>Pengalaman</dt>
+                                    <dd>5+ Tahun</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </article>
+
+                    <article class="profile-card edwin-card">
+                        <div class="profile-header">
+                            <div class="profile-photo">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400" alt="Foto profil Edwin Fernando" loading="lazy">
+                                <div class="profile-overlay">
+                                    <div class="social-links">
+                                        <a href="#" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+                                        <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#" aria-label="Twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h3 class="card-name">Edwin Fernando</h3>
+                            <p class="card-role">Curious Builder & Tech Developer</p>
+                            <p class="card-bio">Developer berpengalaman yang mengubah desain menjadi kode berkualitas tinggi dengan fokus pada performa dan scalability.</p>
+                            <dl class="profile-details">
+                                <div class="detail-item">
+                                    <dt>Spesialisasi</dt>
+                                    <dd>Full-Stack Development</dd>
+                                </div>
+                                <div class="detail-item">
+                                    <dt>Tech Stack</dt>
+                                    <dd>React, Node.js, Python</dd>
+                                </div>
+                                <div class="detail-item">
+                                    <dt>Pengalaman</dt>
+                                    <dd>5+ Tahun</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Skills Section -->
+                <div class="skills-section">
+                    <h3 class="skills-title">Keahlian Kami</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">🎨</div>
+                            <h4>Desain Visual</h4>
+                            <p>Menciptakan identitas visual yang kuat dan memorable</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">💻</div>
+                            <h4>Development</h4>
+                            <p>Mengembangkan solusi teknologi yang scalable dan reliable</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🎯</div>
+                            <h4>User Experience</h4>
+                            <p>Merancang pengalaman pengguna yang intuitif dan engaging</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">⚙️</div>
+                            <h4>Problem Solving</h4>
+                            <p>Menemukan solusi kreatif untuk tantangan kompleks</p>
+                        </div>
                     </div>
-                    <div class="profile-info">
-                        <p class="card-name">Edwin Fernando</p>
-                        <dl class="profile-details">
-                            <div class="detail-item"><dt>Peran</dt><dd>Curious Builder</dd></div>
-                            <div class="detail-item"><dt>Cita-cita</dt><dd>Pengembang Teknologi</dd></div>
-                        </dl>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-number">03 // portfolio</p>
+                    <h2 class="section-title">Karya Terbaik Kami</h2>
+                </div>
+
+                <div class="portfolio-grid">
+                    <article class="portfolio-card" data-category="design">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=500" alt="Project 1" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>E-Commerce Platform Design</h3>
+                                    <p>UI/UX Design</p>
+                                    <a href="#" class="view-link">Lihat Detail →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card" data-category="development">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=500" alt="Project 2" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Real-Time Analytics Dashboard</h3>
+                                    <p>Full-Stack Development</p>
+                                    <a href="#" class="view-link">Lihat Detail →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card" data-category="design">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1460925895917-aed815ad4d88?q=80&w=500" alt="Project 3" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Mobile App Interface</h3>
+                                    <p>UI/UX Design</p>
+                                    <a href="#" class="view-link">Lihat Detail →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card" data-category="development">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=500" alt="Project 4" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>SaaS Platform</h3>
+                                    <p>Full-Stack Development</p>
+                                    <a href="#" class="view-link">Lihat Detail →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card" data-category="design">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=500" alt="Project 5" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Brand Identity Design</h3>
+                                    <p>Branding & Design</p>
+                                    <a href="#" class="view-link">Lihat Detail →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card" data-category="development">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1633356122544-f134324ef6db?q=80&w=500" alt="Project 6" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>AI-Powered Chatbot</h3>
+                                    <p>Full-Stack Development</p>
+                                    <a href="#" class="view-link">Lihat Detail →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-filter="all">Semua</button>
+                    <button class="filter-btn" data-filter="design">Desain</button>
+                    <button class="filter-btn" data-filter="development">Development</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="layanan">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-number">04 // layanan</p>
+                    <h2 class="section-title">Apa Yang Kami Tawarkan</h2>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-pencil-ruler"></i>
+                        </div>
+                        <h3>UI/UX Design</h3>
+                        <p>Desain interface yang beautiful dan user-friendly untuk aplikasi dan website Anda</p>
+                        <ul class="service-features">
+                            <li>✓ Wireframing & Prototyping</li>
+                            <li>✓ User Research</li>
+                            <li>✓ Design System</li>
+                            <li>✓ Responsive Design</li>
+                        </ul>
                     </div>
-                </article>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Membangun website dan aplikasi web yang cepat, aman, dan scalable</p>
+                        <ul class="service-features">
+                            <li>✓ Frontend Development</li>
+                            <li>✓ Backend Development</li>
+                            <li>✓ Full-Stack Solutions</li>
+                            <li>✓ API Development</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile App Development</h3>
+                        <p>Aplikasi mobile native dan cross-platform dengan performance optimal</p>
+                        <ul class="service-features">
+                            <li>✓ iOS Development</li>
+                            <li>✓ Android Development</li>
+                            <li>✓ Cross-Platform</li>
+                            <li>✓ App Maintenance</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Branding & Identity</h3>
+                        <p>Menciptakan identitas brand yang kuat dan konsisten di semua platform</p>
+                        <ul class="service-features">
+                            <li>✓ Logo Design</li>
+                            <li>✓ Brand Guidelines</li>
+                            <li>✓ Marketing Materials</li>
+                            <li>✓ Visual Strategy</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Digital Strategy</h3>
+                        <p>Strategi digital yang comprehensive untuk pertumbuhan bisnis Anda</p>
+                        <ul class="service-features">
+                            <li>✓ Market Analysis</li>
+                            <li>✓ Growth Strategy</li>
+                            <li>✓ Consultation</li>
+                            <li>✓ Performance Tracking</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <h3>Maintenance & Support</h3>
+                        <p>Dukungan teknis berkelanjutan untuk memastikan platform Anda selalu optimal</p>
+                        <ul class="service-features">
+                            <li>✓ 24/7 Support</li>
+                            <li>✓ Bug Fixes</li>
+                            <li>✓ Updates & Security</li>
+                            <li>✓ Performance Optimization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-number">05 // testimonial</p>
+                    <h2 class="section-title">Apa Kata Klien Kami</h2>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Kolaborasi dengan Ali dan Edwin adalah investasi terbaik untuk brand kami. Hasil kerjanya melampaui ekspektasi dengan timeline yang tepat."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100" alt="Klien" loading="lazy">
+                            </div>
+                            <div class="author-info">
+                                <p class="author-name">Sarah Johnson</p>
+                                <p class="author-title">CEO, TechStartup Co.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Tim yang profesional, responsif, dan sangat mengerti kebutuhan bisnis kami. Dari konsep hingga eksekusi, semuanya berjalan sempurna."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100" alt="Klien" loading="lazy">
+                            </div>
+                            <div class="author-info">
+                                <p class="author-name">Michael Chen</p>
+                                <p class="author-title">Founder, Digital Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Hasil design-nya sangat eye-catching dan implementasi technical-nya sangat clean. Saya sangat merekomendasikan untuk semua yang butuh kolaborasi design-development."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=100" alt="Klien" loading="lazy">
+                            </div>
+                            <div class="author-info">
+                                <p class="author-name">Emily Watson</p>
+                                <p class="author-title">Marketing Director, BrandCo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="kontak">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-number">06 // hubungi kami</p>
+                    <h2 class="section-title">Mari Wujudkan Ide Bersama</h2>
+                </div>
+
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Informasi Kontak</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <p class="label">Email</p>
+                                <a href="mailto:hello@alidex-edwin.com">hello@alidex-edwin.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <p class="label">Phone</p>
+                                <a href="tel:+62812345678">+62 812 345 678</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <p class="label">Lokasi</p>
+                                <p>Jakarta, Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="social-media">
+                            <h4>Follow Kami</h4>
+                            <div class="social-icons">
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Nama Lengkap" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subjek Proyek">
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Pilih Jenis Layanan</option>
+                                <option value="design">UI/UX Design</option>
+                                <option value="web">Web Development</option>
+                                <option value="mobile">Mobile Development</option>
+                                <option value="branding">Branding</option>
+                                <option value="strategy">Digital Strategy</option>
+                                <option value="other">Lainnya</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Jelaskan proyek Anda..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="site-footer">
-        <div class="footer-brand">A<span>&</span>E</div>
-        <p>Dibuat bersama dengan rasa ingin tahu.</p>
-        <p class="footer-date">&copy; 2024 / Kolaborasi Ali Dex dan Edwin Fernando</p>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="brand-icon">A<span class="brand-amp">&</span>E</span>
+                <p>Menciptakan pengalaman digital yang luar biasa</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#tentang">Tentang</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="footer-services">
+                <h4>Layanan</h4>
+                <ul>
+                    <li><a href="#layanan">UI/UX Design</a></li>
+                    <li><a href="#layanan">Web Development</a></li>
+                    <li><a href="#layanan">Mobile Development</a></li>
+                    <li><a href="#layanan">Branding</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ali Dex & Edwin Fernando. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
